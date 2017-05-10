@@ -1,13 +1,10 @@
-# Start your Project
+# Create a my-nav component
 
-### Start a new Project
- 
- * choose scss as csspreprocessor
- * define a prefix
- * add routing
- * start your app
+* Generate a `nav` component with angular-cli
+* Use this new `nav` component in the `appComponnet` view
+* Install twitter bootstrap and use it
 
 #### hint
-`ng new angular-starter --style=scss --prefix=my --routing` \
-`cd angular-starter` \
-`ng start` 
+
+`ng g c my-nav` \
+`npm i --save bootstrap`
