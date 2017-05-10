@@ -1,16 +1,13 @@
-# Preparations
+# Start your Project
 
-### Please install these tools to be ready:
+### Start a new Project
+ 
+ * choose scss as csspreprocessor
+ * define a prefix
+ * add routing
+ * start your app
 
-* [Chrome](https://www.google.com/intl/en/chrome/browser/)
-* [Node.js](http://nodejs.org/download/)
-* angular-cli `$ npm i -g @angular/cli`
-* IDE / Editor I Highly recommend [vscode]( https://code.visualstudio.com/Download)
-
-[preview of this Project](https://sandbox.webdave.de/)
-
-#### Test:
-
-`$ node -v` \
-`$ npm -v` \
-`$ ng v` 
+#### hint
+`ng new angular-starter --style=scss --prefix=my --routing` \
+`cd angular-starter` \
+`ng start` 
