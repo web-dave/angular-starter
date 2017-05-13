@@ -1,7 +1,6 @@
 # Create a Service
 
-* Create a `shared` folder
-* Generate a `spotify` service in this shared folder with angular-cli
+* Generate a `spotify` service in a shared folder with angular-cli
 
 #### hints
 
