@@ -7,11 +7,13 @@ import { HttpModule } from '@angular/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MyNavComponent } from './my-nav/my-nav.component';
+import { SearchComponent } from './search/search.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MyNavComponent
+    MyNavComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
