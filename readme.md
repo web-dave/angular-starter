@@ -15,6 +15,9 @@
 
 import { SpotifyService } from '../../shared/spotify.service';
 
+
+constructor(private _spotify: SpotifyService) { }
+
 searchMusic(str: string) {
     if (str.length !== 0) {
          this._spotify.searchArtists(this.searchStr)
