@@ -1,6 +1,7 @@
 # Create a Service
 
 * Generate a `spotify` service in a shared folder with angular-cli
+* User this Service in your AppComponent
 
 #### hints
 
