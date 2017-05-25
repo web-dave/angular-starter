@@ -1,30 +1,27 @@
-# Create a Service
+# User the Service
 
-* Generate a `spotify` service in a shared folder with angular-cli
+* Generate a `search` component with angular-cli
+* Use this new `search` component in the `appComponnet` view
+* Instantiate the service in this component
+* Use the searchstring to search Spotify
+
 
 #### hints
 
-`https://api.spotify.com/v1/`
+`ng generate component search`
 
-`search?offset=0&limit=20&type=artist&market=US&query=:str`
-
-`artists/:id`
-
-`artists/:id/albums`
-
-`albums/:id`
-
-`ng g service shared/spotify`
-
+`<input type="text" placeholder="Search Music..." (keyup)="searchMusic(searchStr)" [(ngModel)]="searchStr" >`
 <pre>
-import { Http } from '@angular/http';
 
-import 'rxjs/add/operator/map';
+import { SpotifyService } from '../../shared/spotify.service';
 
-
-searchArtists(str: string) {
-    let url = `${this.restRoot}search?offset=0&limit=20&type=artist&market=US&query=${str}`;
-    return this._http.get(url)
-      .map(res => res.json());
+searchMusic(str: string) {
+    if (str.length !== 0) {
+         this._spotify.searchArtists(this.searchStr)
+            .subscribe(res => {
+              console.log(res);
+              this.searchResult = res.artists;
+         });
+    }   
 }
 </pre>

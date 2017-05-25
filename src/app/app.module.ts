@@ -1,3 +1,4 @@
+import { SpotifyService } from './shared/spotify.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -18,7 +19,7 @@ import { MyNavComponent } from './my-nav/my-nav.component';
     HttpModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [SpotifyService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
