@@ -9,7 +9,7 @@ import { SpotifyService } from '../shared/spotify.service';
 })
 export class SearchComponent implements OnInit {
   searchStr: string;
-  searchResult: any;
+  artists: any;
 
   constructor(private _spotify: SpotifyService) { }
 
@@ -20,7 +20,7 @@ export class SearchComponent implements OnInit {
       this._spotify.searchArtists(this.searchStr)
         .subscribe(res => {
           console.log(res);
-          this.searchResult = res.artists;
+          this.artists = res.artists;
         });
     }
   }

@@ -1,8 +1,8 @@
 # Create a album-preview Component
 
-* Generate a `album-preview` component with angular-cli
+* Generate a `artist-preview` component with angular-cli
 * show Artists in a list
-* click on this `album-preview` fire a select event
+* click on this `artist-preview` fire a select event
 
 #### hints
 <pre>
@@ -11,11 +11,11 @@ import { Component, OnInit, OnChanges, Input, Output, EventEmitter } from '@angu
 
 @Component({...})
 
-export class InoutComponent implements OnInit, OnChanges {
+export class ArtistPreviwComponent implements OnInit, OnChanges {
 
-  @Input() myInput: string;
+  @Input() artist: any;
   
-  @Output() myOutput = new EventEmitter();
+  @Output() onselect = new EventEmitter();
 
   oState: boolean = true;
   
