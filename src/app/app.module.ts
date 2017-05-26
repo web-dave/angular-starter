@@ -9,13 +9,15 @@ import { AppComponent } from './app.component';
 import { MyNavComponent } from './my-nav/my-nav.component';
 import { SearchComponent } from './search/search.component';
 import { ArtistPreviewComponent } from './artist-preview/artist-preview.component';
+import { ArtistComponent } from './artist/artist.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MyNavComponent,
     SearchComponent,
-    ArtistPreviewComponent
+    ArtistPreviewComponent,
+    ArtistComponent
   ],
   imports: [
     BrowserModule,
