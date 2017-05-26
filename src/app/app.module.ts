@@ -8,12 +8,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MyNavComponent } from './my-nav/my-nav.component';
 import { SearchComponent } from './search/search.component';
+import { ArtistPreviewComponent } from './artist-preview/artist-preview.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MyNavComponent,
-    SearchComponent
+    SearchComponent,
+    ArtistPreviewComponent
   ],
   imports: [
     BrowserModule,

@@ -1,3 +1,4 @@
+import { IArtist } from './../shared/iartist';
 import { Component, OnInit } from '@angular/core';
 
 import { SpotifyService } from '../shared/spotify.service';
@@ -23,6 +24,10 @@ export class SearchComponent implements OnInit {
           this.artists = res.artists;
         });
     }
+  }
+  selectArtist(artist: IArtist){
+    console.log(artist);
+    
   }
 
 }
