@@ -1,1 +1,5 @@
 <input type="text" placeholder="Search Music..." (keyup)="searchMusic(searchStr)" [(ngModel)]="searchStr" >
+
+<ul *ngIf="artists">
+    <li *ngFor="let artist of artists.items">{{artist.name}}</li>
+</ul>

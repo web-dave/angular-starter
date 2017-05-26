@@ -1,4 +1,3 @@
-import { SpotifyService } from './shared/spotify.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -8,9 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit {
   title = 'app works!';
-  constructor(private SpotifyService: SpotifyService){  }
+  constructor(){  }
 
   ngOnInit(){
-    this.SpotifyService.searchArtists('ll').subscribe(m => console.log(m))
   }
 }
