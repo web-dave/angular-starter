@@ -3,6 +3,9 @@
 * Generate a `artist-preview` component with angular-cli
 * show Artists in a list
 * click on this `artist-preview` fire a select event
+* create a `IArtist` type (interface) to improve coding.
+
+`ng g interface shared/IArtist`
 
 #### hints
 <pre>
@@ -11,11 +14,11 @@ import { Component, OnInit, OnChanges, Input, Output, EventEmitter } from '@angu
 
 @Component({...})
 
-export class ArtistPreviwComponent implements OnInit, OnChanges {
+export class InOutComp implements OnInit, OnChanges {
 
-  @Input() artist: any;
+  @Input() artist: IArtist;
   
-  @Output() onselect = new EventEmitter();
+  @Output() onselect = new EventEmitter<IArtist>();
 
   oState: boolean = true;
   
