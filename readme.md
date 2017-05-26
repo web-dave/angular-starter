@@ -1,4 +1,4 @@
-# Generate a artist component
+# Select a Album
 
 * Generate a `artist` component with angular-cli
 * click search.component artist-preview brings you to this `artist.component`
