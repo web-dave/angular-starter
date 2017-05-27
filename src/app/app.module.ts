@@ -11,6 +11,7 @@ import { SearchComponent } from './search/search.component';
 import { ArtistPreviewComponent } from './artist-preview/artist-preview.component';
 import { ArtistComponent } from './artist/artist.component';
 import { AlbumComponent } from './album/album.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { AlbumComponent } from './album/album.component';
     SearchComponent,
     ArtistPreviewComponent,
     ArtistComponent,
-    AlbumComponent
+    AlbumComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
