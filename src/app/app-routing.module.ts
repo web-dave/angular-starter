@@ -1,3 +1,4 @@
+import { AlbumComponent } from './album/album.component';
 import { ArtistComponent } from './artist/artist.component';
 import { SearchComponent } from './search/search.component';
 import { NgModule } from '@angular/core';
@@ -19,9 +20,18 @@ const routes: Routes = [
        pathMatch: 'full'
   },
   { 
+       path: 'album/:id', 
+       component: AlbumComponent,
+       pathMatch: 'full'
+  },
+  { 
        path: '', 
        redirectTo: '/search',
        pathMatch: 'full'
+  },
+  { 
+       path: '**', 
+       redirectTo: '/search'
   }
 ];
 

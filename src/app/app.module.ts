@@ -10,6 +10,7 @@ import { MyNavComponent } from './my-nav/my-nav.component';
 import { SearchComponent } from './search/search.component';
 import { ArtistPreviewComponent } from './artist-preview/artist-preview.component';
 import { ArtistComponent } from './artist/artist.component';
+import { AlbumComponent } from './album/album.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ArtistComponent } from './artist/artist.component';
     MyNavComponent,
     SearchComponent,
     ArtistPreviewComponent,
-    ArtistComponent
+    ArtistComponent,
+    AlbumComponent
   ],
   imports: [
     BrowserModule,
